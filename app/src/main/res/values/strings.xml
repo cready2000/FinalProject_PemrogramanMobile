@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pesona Surabaya</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Pesona Surabaya</string>
+    <string name="nav_header_subtitle">31</string>
+    <string name="nav_header_desc">Pesona Surabaya</string>
+
+    <string name="menu_budaya">Budaya</string>
+    <string name="menu_wisata">Wisata</string>
+    <string name="menu_kuliner">Kuliner</string>
+    <string name="menu_info">Tentang Aplikasi</string>
+
+    <string name="title_activity_wisata_maps">Map</string>
+    <string name="title_activity_kuliner_maps">Map</string>
+
+    <string name="title_wisata_activity_detail">Detail</string>
+    <string name="title_budaya_activity_detail">Detail</string>
+    <string name="title_kuliner_activity_detail">Detail</string>
+
+</resources>

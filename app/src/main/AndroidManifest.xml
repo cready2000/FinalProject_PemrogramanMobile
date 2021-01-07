@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cready.finalproject">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconaplikasi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconaplikasi_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.info.InfoMaps"
+            android:label="title_activity_info_maps"
+            android:parentActivityName="ui.info.InfoDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.ui.info.InfoDetailActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.info.InfoDetailActivity"
+            android:label="Detail Info"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.budaya.BudayaDetailActivity"
+            android:label="Detail Budaya"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.wisata.WisataMaps"
+            android:label="title_activity_wisata_maps"
+            android:parentActivityName="ui.wisata.WisataDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.ui.wisata.WisataDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.wisata.WisataDetailActivity"
+            android:label="Detail Wisata"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.kuliner.KulinerMaps"
+            android:label="title_activity_kuliner_maps"
+            android:parentActivityName="ui.kuliner.KulinerDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.ui.kuliner.KulinerDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.kuliner.KulinerDetailActivity"
+            android:label="Detail Kuliner"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cready.finalproject.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UserAction"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Website -->
+        <activity
+            android:name=".ui.budaya.BudayaWebsite"
+            android:label="Website Budaya"
+            android:parentActivityName=".ui.budaya.BudayaDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.wisata.WisataWebsite"
+            android:label="Website Info Wisata"
+            android:parentActivityName=".ui.wisata.WisataDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.kuliner.KulinerWebsite"
+            android:label="Website Resep Kuliner"
+            android:parentActivityName=".ui.kuliner.KulinerDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.info.InfoWebsite"
+            android:label="Website Info Aplikasi"
+            android:parentActivityName=".ui.info.InfoDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+    </application>
+
+</manifest>

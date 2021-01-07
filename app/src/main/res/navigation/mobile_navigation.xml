@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_info">
+
+    <fragment
+        android:id="@+id/nav_wisata"
+        android:name="com.cready.finalproject.ui.wisata.WisataFragment"
+        android:label="Wisata"
+        tools:layout="@layout/wisata_fragment" />
+
+    <fragment
+        android:id="@+id/nav_kuliner"
+        android:name="com.cready.finalproject.ui.kuliner.KulinerFragment"
+        android:label="Kuliner"
+        tools:layout="@layout/kuliner_fragment" />
+
+    <fragment
+        android:id="@+id/nav_budaya"
+        android:name="com.cready.finalproject.ui.budaya.BudayaFragment"
+        android:label="Budaya"
+        tools:layout="@layout/budaya_fragment" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.cready.finalproject.ui.info.InfoFragment"
+        android:label="Tentang Aplikasi"
+        tools:layout="@layout/info_fragment" />
+
+</navigation>
